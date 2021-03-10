@@ -1,0 +1,61 @@
+{
+  "name": "zoom-clone",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "antd": "^4.13.1",
+    "bootstrap": "^4.6.0",
+    "concurrently": "^6.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "faker": "^5.4.0",
+    "nodemon": "^2.0.7",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.5.1",
+    "react-css-grid": "^2.0.0-0",
+    "react-dom": "^17.0.1",
+    "react-flexbox-grid": "^2.1.2",
+    "react-grid-layout": "^1.2.2",
+    "react-grid-system": "^7.1.2",
+    "react-native": "^0.63.4",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "reactstrap": "^8.9.0",
+    "socket.io": "^4.0.0",
+    "socket.io-client": "^4.0.0",
+    "standard": "^16.0.3",
+    "web-vitals": "^1.0.1",
+    "xss": "^1.0.8"
+  },
+  "scripts": {
+    "dev": "concurrently -n 'server,client' -c 'red,green'  \"nodemon app.js\" \"NODE_ENV=dev PORT=8000 react-scripts start\"",
+    "server": "NODE_ENV=production nodemon app.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
