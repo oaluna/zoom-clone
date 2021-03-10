@@ -4,7 +4,8 @@ html, body {
 body {
 margin: 0;
 text-align: center;
-background-color: whitesmoke;
+background-color: aliceblue;
+font-family: 'Montserrat', sans-serif;
 }
 
 .container2 {

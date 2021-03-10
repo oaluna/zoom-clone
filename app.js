@@ -2,7 +2,7 @@ const express = require('express')
 const http = require('http')
 var cors = require('cors')
 const app = express()
-const bodyParser = require('body-parser')
+
 const path = require("path")
 var xss = require("xss")
 
@@ -10,7 +10,6 @@ var server = http.createServer(app)
 var io = require('socket.io')(server)
 
 app.use(cors())
-app.use(bodyParser.json())
 
 if(process.env.NODE_ENV==='production'){
 	app.use(express.static(__dirname+"/build"))
@@ -20,13 +19,13 @@ if(process.env.NODE_ENV==='production'){
 }
 app.set('port', (process.env.PORT || 4001))
 
-sanitizeString = (str) => {
+const sanitizeString = (str) => {
 	return xss(str)
 }
 
-connections = {}
-messages = {}
-timeOnline = {}
+const connections = {}
+const messages = {}
+const timeOnline = {}
 
 io.on('connection', (socket) => {
 
