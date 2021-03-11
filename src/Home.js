@@ -27,16 +27,11 @@ class Home extends Component {
       <div className='container2'>
         <div
           style={{
-            fontSize: '14px',
-            background: 'white',
-            width: '10%',
-            textAlign: 'center',
-            margin: 'auto',
-            marginBottom: '10px'
+
           }}>
           Source code:
           <IconButton
-            style={{ color: 'black' }}
+            style={{ background: 'transparent', color: '#113355' }}
             onClick={() =>
               (window.location.href = 'https://github.com/oaluna/zoom-clone')
             }>
@@ -45,16 +40,16 @@ class Home extends Component {
         </div>
 
         <div>
-          <h1 style={{ fontSize: '45px' }}>Video Chat Demo</h1>
-          <p style={{ fontWeight: '200' }}>
-            Video conference website that lets you stay in touch with all your
-            friends.
-          </p>
+          <h1 style={{ fontSize: '45px', color: '#135' }}>Video Chat Demo</h1>
+          <h4 style={{ fontWeight: '200', color: '#f0f8ff' }}>
+            Video conference app for staying in touch with all your
+            loved ones.
+          </h4>
         </div>
 
         <div
           style={{
-            background: 'white',
+            background: 'transparent',
             width: '30%',
             height: 'auto',
             padding: '20px',
